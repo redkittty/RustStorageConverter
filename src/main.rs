@@ -223,4 +223,12 @@ fn main() {
     else {
         println!("That is not an option");
     }
+    // Exit
+    println!("---------------");
+    println!("Press the ENTER key to exit!");
+    let mut exit = String::new();
+    io::stdin()
+        .read_line(&mut exit)
+        .expect("Closing with Failed to read line Error");
+
 }
